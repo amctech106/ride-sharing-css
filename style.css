@@ -202,7 +202,7 @@ i {
 }
 
 
-/* -------------Request a ride -------------- */
+/* -------------Number 1 -------------- */
 
 
 .request {
@@ -257,7 +257,7 @@ i {
   margin-left: 85px;
   margin-top: -40px;
 }
-
+/* ------------------Number 2----------------------- */
 .post {
   margin-top: 99px;
 }
@@ -276,51 +276,20 @@ i {
   color: #9e9da2;
 }
 
-.three {
-  display: flex;
-  justify-content: space-between;
-  /* width: 1000px; */
-  /* margin: -120px auto 0; */
+/* ------------------Number 3----------------------- */
+
+.request-main-bottom {
+  margin-top: -230px;        
+  align-items: flex-start;
+}
+/* ------------------Number 4----------------------- */
+
+.circle-spacer {
+  width: 400px;       
+  flex-shrink: 0;
 }
 
-.number3 {
-  width: 60.82px;
-  height: 60.82px;
-  /* margin-left: 419px; */
-}
-
-.notification {
-  font-weight: 800px;
-  font-size: 22px;
-  /* margin-left: 320px; */
-}
-
-.instant-para {
-  /* margin-left: 370px; */
-  width: 290px;
-  height: 91px;
-  font-weight: 500px;
-  font-size: 20px;
-  color: #9e9da2;
-}
-
-.number4 {
-  width: 60.82px;
-  height: 60.82px;
-}
-
-.payment {
-  margin-right: 274px;
-}
-
-.payment-para {
-  width: 290px;
-  height: 91px;
-  font-weight: 500px;
-  font-size: 20px;
-  color: #9e9da2;
-   margin-right: 274px;
-}
+/* -------------------Dots -------------------------------- */
 
 .dots {
   display: flex;
@@ -469,7 +438,6 @@ i {
   display: flex;
   gap: 262px;
 }
-
 
 .clock {
   width: 256.79px;
@@ -625,5 +593,7 @@ font-size: 16px;
 text-align: center;
 margin-top: 76px;
 color: #9e9da2;
-
 }
+
+
+
