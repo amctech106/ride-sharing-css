@@ -68,6 +68,37 @@ nav {
   display: flex;
 }
 
+@media (max-width:380px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .car {
+    order: 1;
+  }
+
+  .text {
+    order: 2;
+  }
+}
+
+@media (max-width:380px) {
+  .text,
+  .car {
+    width: 100%;
+  }
+}
+
+
+  .save-money,
+  .car-para {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+
 .text {
   /* border: 2px solid red; */
   width: 50%;
