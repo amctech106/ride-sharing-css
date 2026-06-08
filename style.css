@@ -271,12 +271,16 @@ i {
   border-radius: 50%;
   background-color: #75bf7a;
   margin-top: 143px;
+  display: flex;          
+  align-items: center;    
+  justify-content: center; 
+  flex-shrink: 0;         
 }
 
 .mobile {
   width: 228.98px;
   height: 480px;
-  margin-left: 85px;
+  margin-left: 0;    /* 85px ہٹائیں */
   margin-top: -40px;
 }
 
@@ -732,17 +736,19 @@ i {
     margin-top: 10px;
   }
 
-  /* ===== MOBILE APP IMAGE ===== */
+  /* ===== موبائل کی تصویر ===== */
+
   .mobile {
-    width: 75% !important;
+    width: 55% !important;
     max-width: 260px !important;
     height: auto !important;
-    margin: 20px auto !important;
+    margin: 30px auto !important;
     display: block !important;
     order: 1 !important;
   }
 
   /* ===== HOW IT WORKS — STEPS ===== */
+
   .request-main,
   .request-main-bottom {
     flex-direction: column !important;
@@ -751,12 +757,13 @@ i {
     margin-top: 20px !important;
   }
 
-  /* سبز دائرہ چھپائیں لیکن Mobile.png دکھائیں */
+  /* موبائل  کے پیچھے والا سبز دائرہ */
+
   .circle {
-    background-color: transparent !important;
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 0 !important;
+    background-color:#75bf7a !important;
+    width:320px !important;
+    height: 320px !important;
+    border-radius: 50٪ !important;
     margin: 0 !important;
     display: flex !important;
     justify-content: center !important;
