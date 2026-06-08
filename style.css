@@ -92,7 +92,7 @@ nav {
   line-height: 28px;
   width: 550px;
   height: 120px;
-  margin: 27px 103px 0px 80px;
+  margin: 50px 103px 0px 80px;
 }
 .car {
   width: 50%;
@@ -116,6 +116,7 @@ nav {
 .btns {
   display: flex;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .download-btn {
