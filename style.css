@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -29,6 +30,24 @@ nav {
   margin: 85px 80px 38px 80px;
 }
 
+  /* border: 2px solid red; */
+}
+
+@media (max-width: 381px) {
+  .navbar {
+    visibility: hidden;
+  }
+  nav {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 380px) {
+  .fa-bars {
+    display: none !important;
+    margin-top: 20px;
+  }
+}
 .navbar > a {
   text-decoration: none;
   color: #000;
@@ -63,16 +82,41 @@ nav {
   display: flex;
 }
 
-.save-money,
-.car-para {
-  width: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
+@media (max-width:380px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .car {
+    order: 1;
+  }
+
+  .text {
+    order: 2;
+  }
 }
+
+@media (max-width:380px) {
+  .text,
+  .car {
+    width: 100%;
+  }
+}
+
+
+  .save-money,
+  .car-para {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
 
 .text {
   width: 50%;
+  height: 582.81px;
+  background-color: #f9f9f9;
 }
 
 .save-money {
@@ -82,6 +126,13 @@ nav {
   line-height: 65.91px;
   margin: 163px 103px 0px 80px;
   color: #000;
+}
+
+@media (max-width: 380) {
+  .save-money {
+    width: 320;
+    height: 114;
+  }
 }
 
 .car-para {
@@ -117,16 +168,6 @@ nav {
   gap: 30px;
 }
 
-.download-btn {
-  margin-left: 80px;
-  background-color: #000;
-  width: 260px;
-  height: 67px;
-  font-weight: 800;
-  font-size: large;
-  color: #ffffff;
-  border-radius: 8px;
-}
 .android {
   margin-left: 80px;
   margin-top: 62px;
@@ -150,6 +191,14 @@ nav {
   border-radius: 8px;
 }
 
+@media (max-width: 380) {
+  .apple {
+    display: block;
+    width: 152px;
+    height: 38px;
+  }
+}
+
 i {
   font-weight: 800;
   font-size: xx-large;
@@ -158,9 +207,17 @@ i {
 .ractangle > img {
   width: 1280px;
   height: 166px;
-  margin: 86px 80px 0px 80px;
+  margin: 120px 80px 0px 80px;
 }
 
+@media (max-width: 380px) {
+  .ractangle {
+    width: 320;
+height: 249;
+border-radius: 5px;
+
+  }
+}
 .ractangle {
   position: relative;
 }
@@ -171,16 +228,17 @@ i {
   top: 145px;
   left: 152px;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
 .inp > p {
-  width: 246;
+  width: 250;
   height: 56;
   color: #ffffff;
   margin-right: 122px;
   position: relative;
   font-weight: 600px;
-  font-size: 24.6px;
+  font-size: 26px;
   line-height: 28px;
 }
 
@@ -227,7 +285,10 @@ i {
   margin-top: 25px;
 }
 
-/* Number 1 */
+
+/* -------------Number 1 -------------- */
+
+
 .request {
   margin-top: 99px;
 }
@@ -307,7 +368,7 @@ i {
 
 /* Number 4 */
 .circle-spacer {
-  width: 400px;
+  width: 400px;       
   flex-shrink: 0;
 }
 
@@ -562,7 +623,6 @@ i {
   color: #9e9da2;
   padding: 40px;
 }
-
 
 /* =====================================================
    MOBILE RESPONSIVE — max-width: 768px
