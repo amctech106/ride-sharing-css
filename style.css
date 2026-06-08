@@ -44,7 +44,8 @@ nav {
   border-radius: 5.95px;
 }
 
-/* Hamburger — desktop پر چھپا، صرف موبائل پر دکھے */
+/* مینیو آئیکون موبائل پر دکھے گا ڈیسک ٹاپ پر نہیں */
+
 .fa-solid.fa-bars {
   display: none;
 }
@@ -271,16 +272,16 @@ i {
   border-radius: 50%;
   background-color: #75bf7a;
   margin-top: 143px;
-  display: flex;          
-  align-items: center;    
-  justify-content: center; 
-  flex-shrink: 0;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .mobile {
   width: 228.98px;
   height: 480px;
-  margin-left: 0;    /* 85px ہٹائیں */
+  margin-left: 0;
   margin-top: -40px;
 }
 
@@ -321,31 +322,32 @@ i {
   justify-content: center;
   align-items: center;
   gap: 4.51px;
+  margin-top: 40px !important;
 }
 
 .dot1 {
-  margin-top: 130px;
+  /* margin-top: 130px; */
   width: 12.77px;
   height: 12.77px;
   border-radius: 50%;
   background-color: #75bf7a;
 }
 .dot2 {
-  margin-top: 130px;
+  /* margin-top: 130px; */
   width: 12.77px;
   height: 12.77px;
   border-radius: 50%;
   background: #7bc280;
 }
 .dot3 {
-  margin-top: 130px;
+  /* margin-top: 130px; */
   width: 12.77px;
   height: 12.77px;
   border-radius: 50%;
   background-color: #82c086;
 }
 .dot4 {
-  margin-top: 130px;
+  /* margin-top: 130px; */
   width: 12.77px;
   height: 12.77px;
   border-radius: 50%;
@@ -760,14 +762,16 @@ i {
   /* موبائل  کے پیچھے والا سبز دائرہ */
 
   .circle {
-    background-color:#75bf7a !important;
-    width:320px !important;
+    background-color: #75bf7a !important;
+    width: 320px !important;
     height: 320px !important;
     border-radius: 50٪ !important;
-    margin: 0 !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    order: -1;
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
   }
 
   .circle-spacer {
@@ -812,6 +816,8 @@ i {
   /* ===== DOTS ===== */
   .dots {
     margin: 30px 0 10px 0;
+    order: 1 !important;
+    display: none !important;
   }
 
   .dot1,
@@ -820,13 +826,23 @@ i {
   .dot4 {
     margin-top: 0;
   }
+  */
+
+  /* @media (max-width:768px){
+
+  .dots{
+    margin-top: -750px !important;
+  }
+
+}
 
   /* ===== BENEFITS SECTION ===== */
   .benefits {
     margin-top: 50px;
   }
 
-  /* فگما موبائل — ہر کارڈ ورٹیکل: نمبر → ہیڈنگ → پیرا → تصویر */
+  /*بینفٹ والے کارڈ اور اور ان کا آرڈر  */
+
   .flexible,
   .earning,
   .support {
@@ -876,6 +892,25 @@ i {
     font-size: 15px !important;
     margin: 8px 0 16px 0 !important;
     padding: 0 !important;
+  }
+  @media (max-width: 768px) {
+    .earning {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .earning > div:first-child {
+      order: 2 !important;
+    }
+
+    .earning > div:last-child {
+      order: 1 !important;
+    }
+
+    .earning-heading,
+    .earning-para {
+      text-align: center !important;
+    }
   }
 
   /* تصویر سب سے نیچے */
