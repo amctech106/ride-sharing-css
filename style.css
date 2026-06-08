@@ -16,13 +16,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-
-  /* border: 2px solid green; */
 }
 
 .logo {
   margin: 85px 0px 38px 80px;
-  /* border: 2px solid red; */
 }
 .navbar {
   display: flex;
@@ -30,25 +27,8 @@ nav {
   align-items: center;
   gap: 46px;
   margin: 85px 80px 38px 80px;
-  /* border: 2px solid red; */
 }
 
-@media (max-width:381px) {
-  .navbar {
-    visibility: hidden;
-  }
-  nav{
-    background-color:#f9f9f9; ;
-  }
-}
-
-@media (min-width:380px) {
-  .fa-bars{
-    display: none !important;
-    margin-top: 20px;
-  }
-  
-}
 .navbar > a {
   text-decoration: none;
   color: #000;
@@ -64,46 +44,35 @@ nav {
   border-radius: 5.95px;
 }
 
+/* Hamburger — desktop پر چھپا، صرف موبائل پر دکھے */
+.fa-solid.fa-bars {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .fa-solid.fa-bars {
+    display: block !important;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #000;
+  }
+}
+
 .hero {
   display: flex;
 }
 
-@media (max-width:380px) {
-  .hero {
-    flex-direction: column;
-  }
-
-  .car {
-    order: 1;
-  }
-
-  .text {
-    order: 2;
-  }
+.save-money,
+.car-para {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
-
-@media (max-width:380px) {
-  .text,
-  .car {
-    width: 100%;
-  }
-}
-
-
-  .save-money,
-  .car-para {
-    width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-  }
-
 
 .text {
-  /* border: 2px solid red; */
   width: 50%;
-  height: 582.81px;
-  background-color: #f9f9f9;
 }
 
 .save-money {
@@ -113,7 +82,6 @@ nav {
   line-height: 65.91px;
   margin: 163px 103px 0px 80px;
   color: #000;
-  /* border: 2px solid red; */
 }
 
 .car-para {
@@ -124,14 +92,24 @@ nav {
   width: 550px;
   height: 120px;
   margin: 27px 103px 0px 80px;
-  /* border: 2px solid red; */
 }
 .car {
-  /* border: 2px solid red; */
   width: 50%;
-  height: 65vh;
+  height: auto;
+  min-height: 65vh;
   margin-top: 54px;
   background-color: #f9f9f9;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 600px;
 }
 
 .btns {
@@ -185,7 +163,6 @@ i {
 
 .ractangle {
   position: relative;
-  /* border: 2px solid red; */
 }
 
 .inp {
@@ -237,7 +214,7 @@ i {
   color: #75bf7a;
 }
 
-.tree-work{
+.tree-work {
   margin: 25px auto;
   font-weight: 500px;
   size: 26px;
@@ -246,14 +223,11 @@ i {
   text-align: center;
 }
 
-.install{
+.install {
   margin-top: 25px;
 }
 
-
-/* -------------Number 1 -------------- */
-
-
+/* Number 1 */
 .request {
   margin-top: 99px;
 }
@@ -273,7 +247,6 @@ i {
   margin-left: 314px;
   text-align: end;
   width: 170px;
-  /* margin-top: 10px; */
 }
 
 .reach {
@@ -306,7 +279,8 @@ i {
   margin-left: 85px;
   margin-top: -40px;
 }
-/* ------------------Number 2----------------------- */
+
+/* Number 2 */
 .post {
   margin-top: 99px;
 }
@@ -325,21 +299,19 @@ i {
   color: #9e9da2;
 }
 
-/* ------------------Number 3----------------------- */
-
+/* Number 3 */
 .request-main-bottom {
-  margin-top: -230px;        
+  margin-top: -230px;
   align-items: flex-start;
 }
-/* ------------------Number 4----------------------- */
 
+/* Number 4 */
 .circle-spacer {
-  width: 400px;       
+  width: 400px;
   flex-shrink: 0;
 }
 
-/* -------------------Dots -------------------------------- */
-
+/* Dots */
 .dots {
   display: flex;
   justify-content: center;
@@ -380,8 +352,8 @@ i {
   text-align: center;
   margin-top: 89.9px;
 }
-/* Flexible Card one ---------------------------- */
 
+/* Flexible Card */
 .flexible {
   width: 1060px;
   height: 304px;
@@ -404,8 +376,6 @@ i {
   font-weight: 500px;
   font-size: 88px;
   color: #75bf7a;
-
-  /* border: 2px solid red; */
 }
 
 .working-hours {
@@ -416,8 +386,6 @@ i {
   font-size: 33.94px;
   line-height: 32.5px;
   padding-top: 60px;
-
-  /* border: 2px solid purple; */
 }
 
 .decide {
@@ -430,8 +398,7 @@ i {
   padding-left: 40px;
 }
 
-/* Earning Card Two ---------------------------- */
-
+/* Earning Card */
 .earning {
   width: 1060px;
   height: 304px;
@@ -462,7 +429,6 @@ i {
   line-height: 32.5px;
   margin-top: 99px;
   margin-right: 311px;
-  /* overflow-x: hidden; */
 }
 
 .earning-para {
@@ -472,50 +438,9 @@ i {
   width: 385px;
   height: 47px;
   color: #9e9da2;
-  /* overflow-x: hidden; */
 }
 
-/* Costumer Support Card three---------------- */
-
-.flexible {
-  width: 1060px;
-  height: 304px;
-  margin-left: 145px;
-  margin-top: 52px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  display: flex;
-  gap: 262px;
-}
-
-.clock {
-  width: 256.79px;
-  height: 254.82px;
-  margin-top: 26px;
-  margin-right: 110.21px;
-}
-
-.zeero1 {
-  font-weight: 500px;
-  font-size: 88px;
-  color: #75bf7a;
-
-  /* border: 2px solid red; */
-}
-
-.working-hours {
-  text-align: end;
-  top: 2344px;
-  left: 248px;
-  font-weight: 600;
-  font-style: Semibold;
-  font-size: 33.94px;
-  line-height: 32.5px;
-  padding-top: 60px;
-}
-
-/* --------------------Costumer Support Center------------------- */
-
+/* Customer Support Card */
 .support {
   width: 1060px;
   height: 304px;
@@ -538,8 +463,6 @@ i {
   font-weight: 500px;
   font-size: 88px;
   color: #75bf7a;
-
-  /* border: 2px solid red; */
 }
 
 .support-center {
@@ -549,8 +472,6 @@ i {
   line-height: 32.5px;
   margin-top: 60px;
   margin-left: 38px;
-
-  /* border: 2px solid purple; */
 }
 
 .support-para {
@@ -563,8 +484,7 @@ i {
   margin-left: 40px;
 }
 
-/* ---------------------Footer---------------------- */
-
+/* Footer */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -611,7 +531,6 @@ i {
   padding: 10px;
   margin-top: 126px;
   margin-right: 42px;
-  /* overflow-x: hidden; */
 }
 
 .fa-google-play {
@@ -633,17 +552,359 @@ i {
   padding: 10px;
   margin-top: 126px;
   margin-right: 50px;
-  /* overflow-x: hidden; */
 }
 
-.copyright{
-font-weight: 400;
-font-size: 16px;
-text-align: center;
-margin-top: 76px;
-color: #9e9da2;
-padding: 40px;
+.copyright {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 76px;
+  color: #9e9da2;
+  padding: 40px;
 }
 
 
+/* =====================================================
+   MOBILE RESPONSIVE — max-width: 768px
+   فگما موبائل ویو کے مطابق
+   ===================================================== */
 
+@media (max-width: 768px) {
+
+  /* ===== BODY ===== */
+  body {
+    overflow-x: hidden;
+    padding: 0 16px;
+  }
+
+  * {
+    max-width: 100%;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    padding: 18px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .logo {
+    margin: 0;
+    width: 110px;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 70px 0 0 0;
+  }
+
+  .car {
+    order: -1 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+    margin: 20px 0 0 0 !important;
+    background-color: transparent !important;
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .text {
+    order: 0 !important;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .car-img,
+  .car img,
+  .car > img {
+    width: 85% !important;
+    max-width: 340px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .save-money {
+    width: 100%;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .car-para {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 0 0 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .btns {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .android,
+  .apple {
+    width: 85%;
+    max-width: 300px;
+    height: 56px;
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* ===== RECTANGLE / EMAIL SECTION ===== */
+  .ractangle img {
+    display: none !important;
+  }
+
+  .ractangle {
+    background-color: #75bf7a;
+    border-radius: 14px;
+    padding: 24px 16px;
+    margin: 24px 0;
+  }
+
+  .inp {
+    position: static !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .inp > p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .inp > input {
+    width: 100%;
+    max-width: 320px;
+    height: 52px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .apply-btn {
+    width: 100%;
+    max-width: 320px;
+    height: 52px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* ===== HOW IT WORKS ===== */
+  .tree-work {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    height: auto;
+  }
+
+  .install {
+    margin-top: 10px;
+  }
+
+  /* ===== MOBILE APP IMAGE ===== */
+  .mobile {
+    width: 75%;
+    max-width: 260px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* ===== HOW IT WORKS — STEPS ===== */
+  .request-main,
+  .request-main-bottom {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 28px;
+    margin-top: 20px !important;
+  }
+
+  /* سبز دائرہ اور اسپیسر چھپا دیں */
+  .circle,
+  .circle-spacer {
+    display: none !important;
+  }
+
+  /* ہر اسٹیپ سینٹر */
+  .request,
+  .post {
+    text-align: center;
+    margin-top: 0;
+    padding: 0 10px;
+  }
+
+  .request > img,
+  .post > img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .ride-request,
+  .post-ride {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .reach,
+  .post-ride-para {
+    width: 100%;
+    text-align: center;
+    margin: 8px auto;
+    height: auto;
+    font-size: 15px;
+  }
+
+  /* ===== DOTS ===== */
+  .dots {
+    margin: 30px 0 10px 0;
+  }
+
+  .dot1, .dot2, .dot3, .dot4 {
+    margin-top: 0;
+  }
+
+  /* ===== BENEFITS SECTION ===== */
+  .benefits {
+    margin-top: 50px;
+  }
+
+  /* فگما موبائل — ہر کارڈ ورٹیکل: نمبر → ہیڈنگ → پیرا → تصویر */
+  .flexible,
+  .earning,
+  .support {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 24px 16px !important;
+    margin: 16px 0 !important;
+    gap: 0 !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  /* نمبر سب سے اوپر */
+  .zeero1,
+  .zeero2,
+  .zeero3 {
+    order: 1 !important;
+    font-size: 56px !important;
+    margin-bottom: 4px;
+  }
+
+  /* ہیڈنگ دوسرے نمبر پر */
+  .working-hours,
+  .earning-heading,
+  .support-center {
+    order: 2 !important;
+    text-align: center !important;
+    font-size: 22px !important;
+    line-height: 28px !important;
+    padding: 0 !important;
+    margin: 8px 0 !important;
+    width: 100%;
+  }
+
+  /* پیراگراف تیسرے نمبر پر */
+  .decide,
+  .earning-para,
+  .support-para {
+    order: 3 !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: auto !important;
+    font-size: 15px !important;
+    margin: 8px 0 16px 0 !important;
+    padding: 0 !important;
+  }
+
+  /* تصویر سب سے نیچے */
+  .clock,
+  .earning-image,
+  .support-img {
+    order: 4 !important;
+    width: 160px !important;
+    height: auto !important;
+    margin: 10px auto 0 auto !important;
+    display: block !important;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 24px;
+    padding: 30px 0 10px 0;
+  }
+
+  .footer-logo {
+    margin: 0;
+    width: 110px;
+    height: auto;
+  }
+
+  .friend1,
+  .friend2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .friend-one-para,
+  .friend-two-para {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .android-footer,
+  .apple-footer {
+    width: 160px;
+    height: 48px;
+    margin: 8px auto;
+    border-radius: 6px;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
